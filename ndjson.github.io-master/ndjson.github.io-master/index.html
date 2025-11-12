@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <title>ndjson</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <div class="inner">
+
+        <header>
+          <h1><span class="prefix">nd</span>json <span class="subtitle">Newline Delimited JSON</span></h1>
+        </header>
+
+        <nav><ul>
+          <li>Home</li>
+          <li><a href="https://github.com/ndjson/ndjson-spec">Spec</a></li>
+          <li><a href="libraries.html">Libraries</a></li>
+        </ul></nav>
+
+        <hr>
+
+        <section id="main_content">
+<p>This page describes the ndjson format, also called Newline delimited JSON.
+NDJSON is a convenient format for storing or streaming
+structured data that may be processed one record at a time. It works well with unix-style
+text processing tools and shell pipelines. It's a great format for log files.
+It's also a flexible format for passing messages between cooperating processes.</p>
+
+<h3>
+<a name="line-separator-is-n" class="anchor" href="#line-separator-is-n"><span class="octicon octicon-link"></span></a>
+1. Line Separator is <code>'\n'</code>
+</h3>
+
+<p>This means <code>'\r\n'</code> is also supported because trailing white space is ignored when parsing JSON values.</p>
+
+<h3>
+<a name="each-line-is-a-valid-json-value" class="anchor" href="#each-line-is-a-valid-json-value"><span class="octicon octicon-link"></span></a>
+2. Each Line is a Valid JSON Value
+</h3>
+
+<p>The most common values will be objects or arrays, but any JSON value is permitted. See <a href="http://json.org/">json.org</a> for more information about JSON values.</p>
+
+</section>
+        <footer>
+
+          <a href="https://github.com/ndjson">NDJSON on GitHub</a> &bull;
+          Based on a theme by <a href="https://twitter.com/jasonlong">Jason Long</a> &bull;
+          Site forked from <a href="http://jsonlines.org">jsonlines.org</a>
+        </footer>
+
+        
+      </div>
+    </div>
+  </body>
+</html>
